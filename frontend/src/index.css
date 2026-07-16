@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+}
+
+@layer components {
+  .glass-card { @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl; }
+  .gradient-bg { background: linear-gradient(135deg, #232F3E 0%, #37475A 50%, #131921 100%); }
+  .amazon-gradient { background: linear-gradient(135deg, #FF9900 0%, #E88B00 100%); }
+  .scroll-hidden::-webkit-scrollbar { display: none; }
+  .scroll-hidden { -ms-overflow-style: none; scrollbar-width: none; }
+}
